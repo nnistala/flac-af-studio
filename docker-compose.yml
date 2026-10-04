@@ -1,0 +1,11 @@
+services:
+  flac-af-studio:
+    build: .
+    container_name: flac-af-studio
+    restart: unless-stopped
+    ports:
+      - "8484:8484"
+    volumes:
+      - ./downloads:/app/downloads
+    environment:
+      - FLAC_DOWNLOADS_DIR=/app/downloads
