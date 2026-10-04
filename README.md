@@ -1,13 +1,13 @@
 # Flac AF · Hi-Res Lossless Studio
 
 <p align="center">
-  <img src="assets/screenshot-albums.png" alt="Flac AF Studio Dashboard" width="85%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+  <img src="assets/screenshot-albums.png" alt="Flac AF Studio Dashboard" width="85%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/FastAPI-Framework-009688?style=flat&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Audio-Bit--Perfect%20FLAC-FF4081?style=flat" alt="FLAC Lossless">
+  <img src="https://img.shields.io/badge/Audio-Bit--Perfect%20FLAC-2563EB?style=flat" alt="FLAC Lossless">
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker Ready">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT">
 </p>
@@ -21,9 +21,9 @@ Built for portable audio enthusiasts, DAPs (Digital Audio Players like Shanling,
 ## ✨ Key Features
 
 * **True Bit-Perfect Lossless Streams:** Downloads genuine FLAC audio matching ISRC recording codes directly from master providers (never lossy YouTube audio or transcode fakes).
-* **Zero Login Required:** Fully stateless extension bridges — no accounts, cookies, or paid credentials needed.
-* **Modern Dark Glassmorphic UI:** Sleek responsive dashboard featuring live progress bars, high-res artwork cards, and queue controls.
-* **Built-in HTML5 Lossless Web Player:** Preview downloaded FLACs and albums instantly in your browser before transferring to your gear.
+* **Zero Login Required:** Fully stateless extension bridges — no accounts, cookies, or private credentials needed.
+* **Audiophile Studio Light Interface:** Clean, high-contrast minimalist dashboard featuring real-time download progress, high-res album cards, and queue controls.
+* **Built-in HTML5 Lossless Web Player:** Audition and preview downloaded FLACs and albums instantly in your browser before transferring to your gear.
 * **Resilient Multi-Provider Fallback:** Automatic failover chain (`Tidal Web ➔ Qobuz Web ➔ Amazon Music ➔ Deezer`) guarantees maximum catalog availability.
 * **DAP-Ready Organization:**
   * Embeds rich ID3/FLAC Vorbis tags (Artist, Album, Year, Track Number, Genre, ISRC).
@@ -49,16 +49,16 @@ Resolves tracklists, durations, and audio resolution badges (`FLAC 24/192`):
 
 ---
 
-## ⚡ How It Compares
+## 🎯 Architecture & Philosophy
 
-| Feature | SpotDL | Zotify | QobuzDownloaderX / TMD | **Flac AF Studio** |
-| :--- | :--- | :--- | :--- | :--- |
-| **Audio Format** | Lossy Opus / MP3 (128–160 kbps) | Lossy Ogg (max 320 kbps) | Bit-Perfect FLAC (16/24-bit) | **Bit-Perfect FLAC (16/24-bit)** |
-| **Source** | YouTube Audio scrape | Spotify CDN | Tidal / Qobuz API | **Tidal / Qobuz / Amazon Web Bridges** |
-| **Account Required?** | ❌ No | ⚠️ Spotify Free/Prem | 🔴 **Paid HiFi Subscription** | 🟢 **Zero Login Needed** |
-| **Interface** | CLI / Basic Web | CLI Only | Desktop GUI (Windows) | **Dark Glassmorphic Web App** |
-| **In-Browser Audio Player** | ❌ None | ❌ None | ❌ None | ✅ **Built-in Lossless Player** |
-| **DAP cover.jpg Processing** | ❌ None | ❌ None | ⚠️ Manual | ✅ **Automatic (100% Guaranteed)** |
+Flac AF Studio is built around three core principles:
+
+1. **Uncompromised Stream Fidelity:**  
+   Every stream is retrieved untouched in its original bit-depth and sample rate from public CDN endpoints. No lossy transcoding, no dynamic range compression, and no format conversion.
+2. **Frictionless Zero-Config Operation:**  
+   Users shouldn't have to manage API keys, configure session cookies, or renew streaming tokens. The stateless extension bridges run out of the box.
+3. **Hardware Interoperability (DAP First):**  
+   Music libraries should be clean and immediately usable on standalone audiophile players (microSD cards, car audio systems, offline DAPs) with zero manual file renaming or artwork stitching required.
 
 ---
 
@@ -68,7 +68,7 @@ Resolves tracklists, durations, and audio resolution badges (`FLAC 24/192`):
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/flac-af-studio.git
+   git clone https://github.com/nnistala/flac-af-studio.git
    cd flac-af-studio
    ```
 2. Run the launcher:
